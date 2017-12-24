@@ -1,3 +1,3 @@
 <?
-//below you Can add Hit Counter COdes :)
+//Place hit counter codes here
 ?>

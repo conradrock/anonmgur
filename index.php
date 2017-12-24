@@ -100,9 +100,9 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
 
             move_uploaded_file($_FILES['file']['tmp_name'], $filedir.'/'.$newname);
 
-            $linkurl = 'http://'.$_SERVER['HTTP_HOST'].preg_replace('/\/([^\/]+?)$/', '/', $_SERVER['PHP_SELF']).'#'.$newname;
+            $linkurl = 'https://'.$_SERVER['HTTP_HOST'].preg_replace('/\/([^\/]+?)$/', '/', $_SERVER['PHP_SELF']).'#'.$newname;
 
-            $imgurl = 'http://'.$_SERVER['HTTP_HOST'].preg_replace('/\/([^\/]+?)$/', '/', $_SERVER['PHP_SELF']).$filedir.'/'.$newname;
+            $imgurl = 'https://'.$_SERVER['HTTP_HOST'].preg_replace('/\/([^\/]+?)$/', '/', $_SERVER['PHP_SELF']).$filedir.'/'.$newname;
 			$alt = $_POST["alt"];
 
             print '<h2>Picture Uploaded Successfuly!!!!</h2> <p id="codes">
